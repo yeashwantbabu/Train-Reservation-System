@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+<title> Signup Form </title>
+<style>
+body{
+	margin:0;
+	background-image:url(G:\locomotive_train_smoke_80406_1920x1080.jpg);
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+header{
+	background:black;
+	color:white;
+	paddings:15px 0px 6px 40px;
+	height:80px;
+	opacity:0.7;
+	}
+	
+	p{
+		color: white;
+		 text-align: center;
+			    font-size: x-large;
+			    font-weight: 600;
+			    font-style: italic;
+	}
+header h1{
+	display:inline;
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-left: 15px;
+}
+h2{
+	color: white;
+}
+nav ul{
+	display:inline;
+	padding:0px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	color:white;
+	float:left;
+	margin-right:40px;
+	margin-top: 10px;
+}
+nav ul li a{
+	color:white;
+	font-size: 20;
+	text-decoration:none;
+}
+.homeblack:hover{
+	background-color:green;
+	padding:20px 20px 22px 20px;
+}
+.divider{
+background-color:green;
+}
+body{
+	margin:0;
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+
+.loginbox{
+    width: 400px;
+    height: 700px;
+    background:rgba(0,0,0,1)  ;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+    left: calc(50% - 15%);
+     
+}
+h1{
+    margin:0 ;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+width: 100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+{
+border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px; 
+}
+.loginbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: #fb2525;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor:pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a{
+    text text-decoration: none ;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgrey;
+}
+.loginbox a:hover
+{
+color :#ffc107
+}
+</style>
+<body>
+ <background="6.jpeg" background-repeat: no-repeat; background-size:100%; >
+<header>
+<nav>
+<a href="main page.html"><h1>HOME</h1></a>
+<ul  STYLE=" TOP:0px; right:200px;" >
+ <li><a class="homeblack" href="ewallet.html">ewallet</a></li>
+<li><a class="homeblack" href="pnr status.html">pnr status</a></li>
+
+<li><a class="homeblack" href="contact us.html">Contact us</a></li>
+<li><a class="homeblack" href="sign up.html">Signup</a><li>
+<li><a class="homeblack" href="Login.html">Login</a><li>
+<li><a class="homeblack" href="meals.html">meals</a><li>
+<li><a class="homeblack" href="about us.html">About us</a></li>
+
+</ul>
+</nav>
+</header>
+    <div class="loginbox">
+  
+        <h1> Signup Here</h1>
+        <form name="signup" onSubmit="return validation()" action ="booking ticket.html"> 
+        <p> Name </p>
+            <input type="text" name="uname1" placeholder="First Name Last Name" required>
+            <p> Email </p>
+            <input type="email" name="email" placeholder="Enter email" required><br>
+            <p> Username</p>
+            <input type="text" name="uname" placeholder="Enter Username" required>
+            <p> Password </p>
+            <input type="password" name="pwd" placeholder="Enter Password" required><br>
+            <p> Confirm Password </p>
+            <input type="password" name="pwd1" placeholder="Confirm Password" required><br>
+            <p>Mobile Number</p>
+            <input type="number" name="num" placeholder="Enter Mobile Number"required ><br>
+          <a><input type="submit" onclick="sign()" name="" value="Signup"><br></a>
+            
+           
+            </form>
+    </div>
+    <!--JavaScript-->
+    <script type="text/javascript">
+    function validation()
+        {
+            var uname=document.signup.uname.value;
+            var pwd=document.signup.pwd.value;
+            var pwd1=document.signup.pwd1.value;
+            if(uname=="" || pwd=="")
+                {
+                    alert("Required field are empty");
+                    return;
+                }
+            if(uname.length<6)
+                {
+                    alert("UsernameMust be min 6 characters");
+                      return;                                        
+                }
+            if(pwd.length<6 ||pwd.length>12)
+                {
+                    alert("Passwordmust be 6 to 12 Characters");
+                      return;                                          
+                }
+            if(pwd!=pwd1)
+               {
+               alert("passwords didnt match");
+              return;                                  
+               }
+            if(num.length!=10)
+                {
+                    alert("Enter Valid Mobile Number");
+                }
+				
+				
+        }
+		
+    </script>
+    
+</body>
+</head>
+</html>    

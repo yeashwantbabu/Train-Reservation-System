@@ -1,0 +1,246 @@
+<!DOCTYPE.HTML>
+<html>
+<head>
+
+<a11><i><u><h1>RAILWAY RESERVATION SYSTEM</h1><u></i></a11>
+<hr/>
+<style> 
+body{
+	margin:0;
+	background-image:url(G:\locomotive_train_smoke_80406_1920x1080.jpg);
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+header{
+	background:black;
+	color:white;
+	paddings:15px 0px 6px 40px;
+	height:80px;
+	opacity:0.9;
+	}
+	
+	p{
+		color: white;
+		 text-align: center;
+			    font-size: x-large;
+			    font-weight: 700;
+			    font-style: bold;
+	}
+header h1{
+	display:inline;
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-left: 15px;
+}
+h2{
+	color: white;
+}
+nav ul{
+	display:inline;
+	padding:0px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	color:white;
+	float:left;
+	margin-right:20px;
+	margin-top: 10px;
+}
+nav ul li a{
+	color:white;
+	font-size: 20;
+	text-decoration:none;
+}
+.homeblack:hover{
+	background-color:green;
+	padding:20px 20px 22px 20px;
+}
+.divider{
+background-color:green;
+}
+body{
+	margin:0;
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+
+.loginbox{
+    width: 400px;
+    height: 700px;
+    background:rgba(0,0,0,1)  ;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+    left: calc(50% - 15%);
+     
+}
+h1{
+    margin:0 ;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+width: 100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+{
+border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px; 
+}
+.loginbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: #fb2525;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor:pointer;
+    background: #ffc107;
+    color: #000;
+}
+
+.loginbox a{
+    text text-decoration: none ;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgrey;
+}
+.loginbox a:hover
+{
+color :#ffc107
+}
+
+</style>
+</head>
+<body background="G:\284045.jpg">
+<header>
+<nav>
+<a href="main page.html"><h1>HOME</h1></a>
+<ul  STYLE=" TOP:0px; right:200px;" >
+ <li><a class="homeblack" href="booking ticket.html">booking ticket</a></li>
+<li><a class="homeblack" href="extra.html">AT Station</a></li>
+<li><a class="homeblack" href="remarks.html">Reviews</a></li>
+<li><a class="homeblack" href="contact us.html">Contact us</a></li>
+<li><a class="homeblack" href="sign up.html">Signup</a><li>
+<li><a class="homeblack" href="Login.html">Login</a><li>
+<li><a class="homeblack" href="about us.html">About us</a></li>
+</ul>
+</nav>
+</header>
+<div class="loginbox">
+
+<p>Full Name:
+<br><input type="text"name="Full Name" value="Full Name"></br>
+</p>
+<p>
+email:
+<br><input type="text"name="email id" value="email"></br>
+</p>
+<p>
+Date_of_birth:
+<select>
+<option name="mm/dd/yyyy"value="mm/dd/yyyy">mm/dd/yyyy</option>
+</select>
+</p>
+<p>
+gender:
+<select>
+<option name="gender"value="gender">gender</option>
+<option name="male"value="male">male</option>
+<option name="female"value="female">female</option>
+<option name="other"value="other">other</option>
+</select>
+</p>
+<p>
+Mobile No:
+<br><input type="text"name="Mobile No" value="Mobile No"></br>
+</p>
+<p>
+Address:
+<br><input type="text"name="Address" value="Address"></br></p>
+<p>
+password:<br>
+<input type="text" name="password"value="password"></br>
+</p>
+<p>
+confirm password:<br>
+<input type="text" name=" confrim password"value="confrim password"></br>
+</p>
+</div>
+<!--JavaScript-->
+    <script type="text/javascript">
+    function validation()
+        {
+            var uname=document.signup.uname.value;
+            var pwd=document.signup.pwd.value;
+            var pwd1=document.signup.pwd1.value;
+            if(uname=="" || pwd=="")
+                {
+                    alert("Required field are empty");
+                    return;
+                }
+            if(uname.length<6)
+                {
+                    alert("UsernameMust be min 6 characters");
+                      return;                                        
+                }
+            if(pwd.length<6 ||pwd.length>12)
+                {
+                    alert("Passwordmust be 6 to 12 Characters");
+                      return;                                          
+                }
+            if(pwd!=pwd1)
+               {
+               alert("passwords didnt match");
+              return;                                  
+               }
+            if(num.length!=10)
+                {
+                    alert("Enter Valid Mobile Number");
+                }
+				
+				
+        }
+		
+    </script>
+    
+<a href="project of railway resrvation system 2.html"><button>register</button></a>
+
+</body>
+</html>

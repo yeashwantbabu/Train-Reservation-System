@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head><a11><i><u><h1>RAILWAY RESERVATION SYSTEM</h1><u></i></a11>
+<style>
+body{
+	margin:0;
+	background-image:url(G:\locomotive_train_smoke_80406_1920x1080.jpg);
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+header{
+	background:black;
+	color:white;
+        
+	paddings:15px 0px 6px 40px;
+	height:80px;
+	opacity:0.8;
+	}
+	
+	p{
+		color: white;
+		 text-align: center;
+			    font-size: x-large;
+			    font-weight: 600;
+			    font-style: italic;
+	}
+header h1{
+	display:inline;
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-left: 15px;
+}
+h2{
+	color: white;
+}
+nav ul{
+	display:inline;
+	padding:0px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	color:white;
+	float:left;
+	margin-right:40px;
+	margin-top: 10px;
+}
+nav ul li a{
+	color:white;
+	font-size: 20;
+	text-decoration:none;
+}
+.homeblack:hover{
+	background-color:green;
+	padding:20px 20px 22px 20px;
+}
+.divider{
+background-color:green;
+}
+body{
+	margin:0;
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+
+.loginbox{
+    width: 400px;
+    height: 700px;
+    background:rgba(0,0,0,1)  ;
+    color: #fff;
+    top: 53%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+    left: calc(50% - 15%);
+     
+}
+h1{
+    margin:0 ;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+}
+.loginbox{
+margin-top:40px;
+height:65%;
+background-color:rgba(0,0,0,0.7);
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+width: 100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+{
+border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px; 
+}
+.loginbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: blue;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor:pointer;
+    background: #ffc107;
+        color: #000;
+}
+
+.loginbox a{
+    text text-decoration: none ;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgrey;
+}
+.loginbox a:hover
+{
+color :#ffc107
+}
+</style>
+</head>
+<title> login Form </title>
+<body>
+<header>
+<nav>
+<a href="main page.html"><h1>HOME</h1></a>
+<ul  STYLE=" TOP:0px; right:200px;" >
+ <li><a class="homeblack" href="ewallet.html">ewallet</a></li>
+<li><a class="homeblack" href="pnr status.html">pnr status</a></li>
+<li><a class="homeblack" href="contact us.html">Contact us</a></li>
+<li><a class="homeblack" href="sign up.html">Signup</a><li>
+<li><a class="homeblack" href="Login.html">Login</a><li>
+<li><a class="homeblack" href="meals.html">meals</a><li>
+<li><a class="homeblack" href="about us.html">About us</a></li>
+
+</ul>
+</nav>
+</header>
+<script>
+var objPeople = [
+{
+	username:"Sri reddy",
+        password:"Sri reddy"
+},
+{
+	username:"kesav",
+        password:"kesav"
+},
+{
+	username:"Yeashwanth",
+        password:"Yeashwanth"
+},
+{
+	username:"Vivek",
+        password:"Vivek"
+}
+]
+function getInfo(){
+var username=document.getElementById("username").value
+var password=document.getElementById("password").value
+var f=0
+for(i=0;i<objPeople.length;i++)
+{
+	if(username==objPeople[i].username && password==objPeople[i].password)
+        {
+       alert(username+"  is logged in");
+       window.location.href="main page.html";
+       return
+      }
+        else
+        {
+	  f=1
+        }     
+}
+if(f==1)
+{
+alert("INVALID USER ID OR PASSWORD");
+
+}
+}</script>
+
+</head>
+
+<body>
+<div class="loginbox">
+<img src="C:\Users\Sathi Daddy Srireddy\Desktop\cse 326\avatar1.png" class="avatar">
+<form>
+<h1>LOGIN HERE</h1>
+<p>USERNAME</p>
+<input id="username" type="text" name="" placeholder="Enter Username">
+<p>PASSWORD</p>
+<input id="password" type="password" name="" placeholder="Enter Password">
+</form>
+<a href = "file:///C:/Users/Sathi%20Daddy%20Srireddy/Desktop/cse%20326/booking%20ticket.html"><input type="submit" onclick="getInfo()" name="" value="login"></a>
+
+<p>Don't have an account?<a href="sign up.html">sign up</a></p></div>
+</body>
+
+</html>    

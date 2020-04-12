@@ -1,0 +1,263 @@
+
+<!doctype html>
+ 
+<html>
+
+<head>
+
+
+<title>home</title>
+<style>
+body{
+	margin:0;
+	background-image:url("\indianrilway.jpg");
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+header{
+	background:black;
+	color:white;
+        
+	paddings:15px 0px 6px 40px;
+	height:80px;
+	opacity:0.8;
+	}
+	
+	p{
+		color: white;
+		 text-align: center;
+			    font-size: x-large;
+			    font-weight: 600;
+			    font-style: italic;
+	}
+header h1{
+	display:inline;
+	color:white;
+	font-weight:400;
+	font-size:40px;
+	float:left;
+	margin-top:15px;
+	margin-right:15px;
+	margin-left: 15px;
+}
+h2{
+	color: white;
+}
+nav ul{
+	display:inline;
+	padding:0px;
+	float:left;
+	margin-left: 40px;
+	margin-top: 20px;
+	
+
+}
+nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	color:white;
+	float:left;
+	margin-right:40px;
+	margin-top: 10px;
+}
+nav ul li a{
+	color:white;
+	font-size: 20;
+	text-decoration:none;
+}
+.homeblack:hover{
+	background-color:green;
+	padding:20px 20px 22px 20px;
+}
+.divider{
+background-color:green;
+}
+body{
+	margin:0;
+	background-repeat: no-repeat fixed ; background-size:100% 100% ; background-attachment:fixed; 
+	}
+.loginbox{
+    width: 400px;
+    height: 700px;
+    background:rgba(0,0,0,1);
+    color: #fff;
+    top: 53%;
+    left:15%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top: -50px;
+    left: calc(50% - 15%);
+     
+}
+h1{
+    margin:0 ;
+    padding:0 0 20px;
+    text-align:center;
+    font-size: 22px;
+}
+.loginbox{
+margin-top:40px;
+height:65%;
+background-color:rgba(0,0,0,0.5);
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+width: 100%;
+margin-bottom: 20px;
+}
+.loginbox input[type="text"],input[type="password"],input[type="email"],input[type="number"]
+{
+border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px; 
+}
+.loginbox input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: #fb2525;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor:pointer;
+    background: #ffc107;
+        color: #000;
+}
+
+.loginbox a{
+    text text-decoration: none ;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgrey;
+}
+.loginbox a:hover
+{
+color :#ffc107
+}
+
+</style>
+<header>
+<nav>
+<a href="main page.html"><h1>HOME</h1></a>
+<ul  STYLE=" TOP:0px; right:200px;" >
+ <li><a class="homeblack" href="ewallet.html">ewallet</a></li>
+<li><a class="homeblack" href="pnr status.html">pnr status</a></li>
+<li><a class="homeblack" href="contact us.html">Contact us</a></li>
+<li><a class="homeblack" href="sign up.html">Signup</a><li>
+<li><a class="homeblack" href="Login.html">Login</a><li>
+<li><a class="homeblack" href="meals.html">meals</a><li>
+<li><a class="homeblack" href="about us.html">About us</a></li>
+
+</ul>
+</nav>
+</header>
+</head>
+<body background="G:\cse 326\indianrilway.jpg">
+<h1 style="color:black;font-family:'red serifs';font-size:60px;text-align:right;">INDIAN RAILWAY</h1>
+
+
+<div class="loginbox">
+
+<form>
+<h1>BOOK TICKET HERE</h1>
+<p>FROM</p>
+<input type="text"name="from"placeholder="FROM STATION">
+<p>TO</p>
+<input type="text"name="to"placeholder="DESTINATION">
+</form>
+<P>Journey Date</P>
+<input type="date" name="date" min="2019-01-02">
+<p>Class</p>
+<td><select name="class" required placeholder="class">
+
+<option>Sleeper</option>
+
+<option>AC 3-tier</option>
+
+<option>AC 2-tier</option>
+
+<option>First Class AC</option>
+
+<option>AC Chair Car</option>
+
+<option>Executive Chair</option>
+
+<option>Second Sitting</option>
+
+<option>Third AC Economy</option>
+
+<option>First Class</option>
+
+</select>
+</td>
+<p>Quota</p>
+<td>
+<select name="quota" required>
+
+<option>General Quota</option>
+
+<option>Tatkal</option>
+
+<option>Premium Tatkal</option>
+
+<option>Lower Berth</option>
+
+<option>Ladies</option>
+
+<option>Physically Handicapped</option>
+
+<option>Duty Pass Quota</option>
+
+<option>Defence Quota</option>
+</select></td>
+<a href = "file:///C:/Users/Sathi%20Daddy%20Srireddy/Desktop/cse%20326/Login.html"><input type="submit" onclick="getInfo()" name="" value="find seat availabilty"></a>
+
+
+</div>
+
+
+<p style="color:black;border:1px solid black ;font-color:'black';border-height:3px ;border-width:4px;overflow:scroll;margin-left:1000px;">
+Visit IRCTC registration page,Now, you will require checking even if the Username
+ exists or not
+,Feed all your information on the Registration Page,you require some 
+documents such as Aadhaar card and PAN card information,Once you have feed all your 
+information, you need to click on the Submit Registration 
+Form button,Now, a pop-up
+ will come out with Terms, Just Agree with them and
+ click to Continue, After that, go 
+to the IRCTC Login page from the link provided.
+Now, you will go through a Login form, 
+just feed your Login documentations there and fill up the Captcha code.Now, click on verify
+ email and verify mobile number button. And, finish the verification method.After that, you 
+will obtain an OTP to the listed Mobile Phone Number,Now, check it and Login to your Account,
+Your account is
+ all fixed and now you can initiate to book new railway ticket from the IRCTC website.
+</p>
+
+<marquee style="color:black">please help Indian railways and government of India in moving 
+towards a digitized and cashless economy. Eradicate black money.</marquee>
+
+
+
+</body>
+</html>
